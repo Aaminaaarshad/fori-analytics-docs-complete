@@ -84,6 +84,7 @@ h4 {
 
 .btn:hover {
   border-bottom: 2px solid var(--primary_color);
+  width: fit-content;
 }
 
 hr {

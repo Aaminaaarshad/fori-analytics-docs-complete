@@ -11,6 +11,11 @@ const Api = ({ data, name }) => {
   const [CaseApi, setCaseApi] = useState(ClickedApi.cases[0]);
   const [active1, setActive1] = useState(0);
   const [active2, setActive2] = useState(0);
+  const[width,setWidth]=useState(window.innerWidth)
+
+  window.addEventListener('resize',()=>{
+    setWidth(window.innerWidth)
+  })
 
   const clickHandler = (index) => {
     setValue(index);
@@ -36,7 +41,7 @@ const Api = ({ data, name }) => {
             onClick={() => clickHandler(index)}
             className={active1 === index ? "active btn" : "btn"}>
               <a
-                href={name==="user"?"#details":"#details1"}
+                href={width<=950 && name==="user"?"#details": width<=950 && name==="dashboard"?"#details1":null}
               >
                 {item.title}
               </a>

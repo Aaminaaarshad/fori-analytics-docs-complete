@@ -42,17 +42,17 @@ export const users = [
       {
         id: 2,
         title: "If email Is Missing",
-        response: "Message: Please provide email, first Name and password",
+        response: "Message: Please provide email",
       },
       {
         id: 3,
         title: "If password Is Missing",
-        response: "Message: Please provide email, first Name and password",
+        response: "Message: Please provide password",
       },
       {
         id: 4,
         title: "If firstName Is Missing",
-        response: "Message: Please provide email, first Name and password",
+        response: "Message: Please provide first Name",
       },
     ],
   },
@@ -135,12 +135,12 @@ export const users = [
       {
         id: 2,
         title: "If email Is Missing",
-        response: "Message: Please provide email and password",
+        response: "Message: Please provide email",
       },
       {
         id: 3,
         title: "If password Is Missing",
-        response: "Message: Please provide email and password",
+        response: "Message: Please provide password",
       },
       {
         id: 4,
